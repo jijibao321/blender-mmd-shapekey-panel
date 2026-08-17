@@ -2,36 +2,33 @@
 Blender add-on that organizes MMD model shape keys into categorized panels with Chinese names and keyframe buttons. 将MMD模型的形态键分类显示中文名称，并支持一键K关键帧。
 # Blender MMD 形态键分类控制面板
 
-[![Blender Version](https://img.shields.io/badge/Blender-2.80%2B-orange)](https://www.blender.org/)
-[![License](https://img.shields.io/badge/License-GPL--3.0-blue)](LICENSE)
-
 一款专为 **MMD（MikuMikuDance）模型** 设计的 Blender 插件，让你在动画制作中高效控制面部表情。它将模型的所有形态键（Shape Keys）按 **眼睛、嘴、眉毛** 自动分类，并显示为**中文名称**，无需记忆繁琐的日文原名。所有控件集中在 3D 视图右侧的 **N 面板** 中，支持实时滑块调节和 **一键关键帧插入**，极大提升表情动画的创作效率。
 
 ---
 
-## ✨ 主要特性
+  **主要特性**
 
-- **📂 智能分类**  
+- 1.**智能分类**  
   根据你提供的表格，将形态键精确归类为「眼睛」「嘴」「眉毛」「其他」四大类别，一目了然。
 
-- **🇨🇳 中文显示**  
+- 2.**中文显示**
   每个形态键旁显示对应的中文名称（如“闭眼（笑）”“邪魅一笑”），告别日文或拼音缩写带来的困扰。
 
-- **🎚️ 便捷调节**  
+  3.**便捷调节**
   每个形态键配有滑块和数值输入框，可随时调整强度，并在面板中实时预览效果。
 
-- **⏱️ 一键K帧**  
-  每个形态键右侧都带有一个小巧的 **关键帧图标（菱形方块）**，点击即可在当前时间轴位置插入该形态键值的关键帧，无需右键菜单。
+- 4.**一键K帧**  
+  每个形态键右侧都带有 **关键帧图标（菱形方块）**，点击即可在当前时间轴位置插入该形态键值的关键帧，无需右键菜单。
 
-- **👥 多角色支持**  
+- 5.**多角色支持**  
   场景中若导入多个 MMD 模型，只需**选中对应角色的网格物体**，面板会自动切换显示该模型的形态键，K帧操作仅作用于当前激活角色。
 
-- **📌 未分类兜底**  
+- 6.**未分类兜底**  
   任何未出现在分类表格中的形态键，均自动归入「其他」类别，保证所有形态键都可见可用。
 
 ---
 
-## 🚀 安装指南
+## 安装指南
 
 1. 下载本仓库中的 `mmd_shape_key_panel.py` 文件。
 2. 打开 Blender，进入 **编辑 → 偏好设置 → 插件**。
@@ -41,7 +38,7 @@ Blender add-on that organizes MMD model shape keys into categorized panels with 
 
 ---
 
-## 📖 使用方法
+## 使用方法
 
 1. **选中模型**  
    确保在**物体模式**下选中目标 MMD 模型的**网格身体**（而非骨架）。
@@ -60,7 +57,7 @@ Blender add-on that organizes MMD model shape keys into categorized panels with 
 
 ---
 
-## 🗂️ 分类规则（当前内置映射）
+## 分类规则（当前内置映射）
 
 插件严格依据你提供的 `形态键.xlsx` 表格进行精确匹配，名称必须**完全一致**（区分全半角）。具体分类如下：
 
@@ -75,7 +72,7 @@ Blender add-on that organizes MMD model shape keys into categorized panels with 
 
 ---
 
-## 🛠️ 自定义修改（进阶）
+## 自定义修改（进阶）
 
 如果你需要**调整分类**或**修改中文显示名称**，只需在插件源码开头的字典中增删条目即可：
 
@@ -86,7 +83,7 @@ Blender add-on that organizes MMD model shape keys into categorized panels with 
 
 ---
 
-## ⚠️ 注意事项
+## 注意事项
 
 - 插件仅对 **网格（Mesh）** 类型物体生效，请确保选中身体网格而非骨架。
 - 形态键名称必须**与表格完全一致**（包括数字、特殊符号），否则不会被正确分类。
@@ -95,7 +92,7 @@ Blender add-on that organizes MMD model shape keys into categorized panels with 
 
 ---
 
-## 📸 界面预览
+## 界面预览
 
 （建议在此处插入一张 N 面板截图，展示分类和中文名称）
 
@@ -107,14 +104,14 @@ Blender add-on that organizes MMD model shape keys into categorized panels with 
 
 ---
 
-## 👤 作者
+## 作者
 
-- **Your Name**  
-- GitHub: [你的主页](https://github.com/你的用户名)  
+- **YiHeng Sun**  
+- GitHub: https://github.com/jijibao321 
 - 如有问题或建议，欢迎提 Issue 或 Pull Request。
 
 ---
 
-## 🙏 致谢
+## 致谢
 
 感谢 MMD 社区提供的模型与表格，以及 Blender 强大的 Python API。
